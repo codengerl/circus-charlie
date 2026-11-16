@@ -1,0 +1,58 @@
+/**
+ * NES 經典 8-bit 調色盤色彩定義常數
+ */
+export const PALETTE = {
+  TRANSPARENT: 'rgba(0,0,0,0)',
+  BLACK: '#000000',
+  WHITE: '#FCFCFC',
+  GRAY: '#7C7C7C',
+  LIGHT_GRAY: '#BCBCBC',
+
+  // 查理角色
+  CHARLIE_SKIN: '#FCB4A4',
+  CHARLIE_RED: '#D82800',
+  CHARLIE_BLUE: '#0040A0',
+  CHARLIE_HAIR: '#885400',
+  CHARLIE_WHITE: '#FCFCFC',
+
+  // 獅子角色
+  LION_ORANGE: '#E45C10',
+  LION_MANE: '#743800',
+  LION_BELLY: '#FCBC3C',
+  LION_WHITE: '#FCFCFC',
+  LION_NOSE: '#000000',
+
+  // 火焰與火圈
+  FIRE_RED: '#D82800',
+  FIRE_ORANGE: '#FC7400',
+  FIRE_YELLOW: '#FCBC00',
+  FIRE_WHITE: '#FCFCFC',
+
+  // 火壺
+  POT_DARK_RED: '#881400',
+  POT_HIGHLIGHT: '#E45C10',
+
+  // 錢袋與獎勵
+  MONEY_BAG_BLUE: '#008088',
+  MONEY_BAG_GOLD: '#FCBC00',
+  MONEY_STRING: '#FCFCFC',
+
+  // 背景與舞台
+  TENT_BLUE: '#0040D8',
+  TENT_WHITE: '#FCFCFC',
+  CROWD_SKIN: '#FCB4A4',
+  CROWD_SHIRT_1: '#D82800',
+  CROWD_SHIRT_2: '#008088',
+  CROWD_SHIRT_3: '#00A800',
+  RAILING_RED: '#D82800',
+  RAILING_WHITE: '#FCFCFC',
+  GROUND_BROWN: '#885400',
+  GROUND_GREEN: '#00A800',
+  GROUND_YELLOW: '#FCBC00',
+
+  // HUD
+  HUD_WHITE: '#FCFCFC',
+  HUD_YELLOW: '#FCBC00'
+} as const;
+
+export type PaletteKey = keyof typeof PALETTE;

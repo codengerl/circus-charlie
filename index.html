@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Circus Charlie (馬戲團跳火圈)</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="game-canvas" width="256" height="224"></canvas>
+      <div id="ui-overlay">
+        <div id="hud-top">
+          <div class="hud-item"><span id="label-1up" class="hud-label">1UP</span><span id="score-val">000000</span></div>
+          <div class="hud-item"><span id="label-high" class="hud-label">HIGH</span><span id="highscore-val">020000</span></div>
+          <div class="hud-item"><span id="label-bonus" class="hud-label">BONUS</span><span id="bonus-val">5000</span></div>
+        </div>
+        <div id="hud-bottom">
+          <div id="distance-display">
+            <span id="distance-val">100</span><span id="distance-unit" class="hud-unit">m</span>
+          </div>
+          <div id="lives-display">
+            <span id="label-rest" class="hud-label">REST</span>
+            <div id="lives-icons"></div>
+          </div>
+        </div>
+        <div id="controls-hint">
+          <p id="hint-arrows">方向鍵 [←] 減速 / [→] 加速 | [空白鍵] 跳躍</p>
+          <p id="hint-wasd">A / D : 減速 / 加速 | W / K / Z / X : 跳躍</p>
+        </div>
+        <!-- 語言切換按鈕 -->
+        <button id="btn-lang-toggle" class="arcade-lang-btn" aria-label="切換為英文介面">EN</button>
+        <!-- 行動端虛擬觸控按鈕 -->
+        <div id="touch-controls">
+          <div id="touch-dpad">
+            <button id="btn-left" class="touch-btn" aria-label="後退">◀</button>
+            <button id="btn-right" class="touch-btn" aria-label="加速">▶</button>
+          </div>
+          <div id="touch-actions">
+            <button id="btn-jump" class="touch-btn touch-btn-jump" aria-label="跳躍">JUMP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
